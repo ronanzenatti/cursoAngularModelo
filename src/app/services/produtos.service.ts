@@ -10,9 +10,9 @@ import { map, catchError } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class ProdutosService {
-
- // private url = environment.URL;
-  private url = 'https://3729caed5d1e.ngrok.io/';
+  // private url = environment.URL;
+  private url =
+    'https://my-json-server.typicode.com/ronanzenatti/testeServerJSON/produtos/';
 
   constructor(private http: HttpClient, private toast: ToastrService) {}
 
