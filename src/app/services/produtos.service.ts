@@ -10,11 +10,12 @@ import { map, catchError } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class ProdutosService {
-  // private url = environment.URL;
-  private url =
-    'https://my-json-server.typicode.com/ronanzenatti/testeServerJSON/produtos/';
+  // private url = environment.URL; 'https://my-json-server.typicode.com/ronanzenatti/testeServerJSON/produtos/';
+  private url = 'https://pokeapi.co/api/v2/pokemon/ditto';
 
-  constructor(private http: HttpClient, private toast: ToastrService) {}
+  constructor(private http: HttpClient, private toast: ToastrService) {
+
+  }
 
   public buscarTodos(): Observable<IProduto[]> {
     return this.http.get<IProduto[]>(this.url).pipe(
