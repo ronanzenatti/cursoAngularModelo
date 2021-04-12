@@ -4,10 +4,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
-
-import { LOCALE_ID } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './template/header/header.component';
 import { FooterComponent } from './template/footer/footer.component';
@@ -16,8 +14,10 @@ import { ProdutosListComponent } from './components/produtos/produtos-list/produ
 import { ProdutosCreateComponent } from './components/produtos/produtos-create/produtos-create.component';
 import { ProdutoUpdateComponent } from './components/produtos/produto-update/produto-update.component';
 
+import { LOCALE_ID } from '@angular/core';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+
 import { FormsModule } from '@angular/forms';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
