@@ -24,8 +24,7 @@ export class ProdutosListComponent implements OnInit, OnDestroy {
       .buscarTodos()
       .subscribe((resultado) => {
         this.produtos = resultado;
-      })
-      .unsubscribe();
+      });
   }
 
   public deletar(produto: IProduto): void {
