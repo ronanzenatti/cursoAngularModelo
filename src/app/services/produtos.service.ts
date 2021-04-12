@@ -12,7 +12,7 @@ import { map, catchError } from 'rxjs/operators';
 export class ProdutosService {
 
  // private url = environment.URL;
-  private url = 'https://3729caed5d1e.ngrok.io/';
+  private url = 'https://3729caed5d1e.ngrok.io:3001/';
 
   constructor(private http: HttpClient, private toast: ToastrService) {}
 
