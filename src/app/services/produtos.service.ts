@@ -12,7 +12,6 @@ import { map, catchError } from 'rxjs/operators';
 export class ProdutosService {
 
  // private url = environment.URL;
-
   private url = 'https://my-json-server.typicode.com/ronanzenatti/testeServerJSON/produtos/';
 
   constructor(private http: HttpClient, private toast: ToastrService) {}
